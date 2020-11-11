@@ -6,7 +6,7 @@ phenofile=infection-heart_ukb_v1_phenotypeConstructLT_2020-10-28.txt
 phenokey=infection-heart_ukb_v1_phenotypeConstructLT_2020-10-28_key.txt
 folder=/mnt/archive/phenotypes/constructs/phenoCons/example/
 
-#### Do not change anything below ####
+#### Do NOT change anything below ####
 
 # time stamp
 echo "Start time: $(date)" > time.log
@@ -55,23 +55,3 @@ if [ "$WARNING2" == "yes" ] ; then
      ;;
  esac
 fi
-
-# Copy pheno files
-rsync -avP ${folder}/${phenokey} ubuntu@hunt-ukbb-iaas-theem:/home/ubuntu/mnt-ukbb/pheno/
-rsync -avP ${folder}/${phenofile} ubuntu@hunt-ukbb-iaas-theem:/home/ubuntu/mnt-ukbb/pheno/
-
-# Send job
-ssh ubuntu@hunt-ukbb-iaas-theem 'bash /home/ubuntu/mnt-ukbb/scripts/run.sh '${phenofile}' '${phenokey}''
-
-wait
-
-# Move results
-outdir=/mnt/scratch/output/${user}
-mkdir -p ${outdir}
-
-rsync -avPR --remove-source-files ubuntu@hunt-ukbb-iaas-theem:/home/ubuntu/mnt-ukbb/output/* ${outdir}
-
-# Done - no checks
-echo 'Completed'
-
-echo "Your output can be found here '${outdir}'"
