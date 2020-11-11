@@ -69,7 +69,7 @@ wait
 outdir=/mnt/scratch/output/${user}
 mkdir -p ${outdir}
 
-rsync -avPR --remove-source-files ubuntu@hunt-ukbb-iaas-theem:/home/ubuntu/mnt-ukbb/output/* ${outdir}
+rsync -avP --remove-source-files ubuntu@hunt-ukbb-iaas-theem:/home/ubuntu/mnt-ukbb/output/* ${outdir}
 
 # Done - no checks
 echo 'Completed'
