@@ -47,7 +47,10 @@ If you have >10 jobs, please let Ben or Laurent know and it might be possible to
 ### Step 3 - send your job
 #### Open screen     
 `screen -S job_name`     
-`bash launch_your_job.sh`     
+`bash launch_your_job.sh`   
+
+HINT: To edit detach from screen press `ctr + a then d`     
+To reattach type `screen -r`
 
 ### Step 4 - move your results     
 Your results can be found here:     
