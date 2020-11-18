@@ -1,11 +1,16 @@
 #!/bin/bash
 
 # print user
-user=`ps u | grep 'ssh ubuntu@hunt-ukbb-iaas-theem bash' | head -n1 | cut -d ' ' -f1`
+ps ua > ps.txt
+echo 'NO_ONE ssh ubuntu@hunt-ukbb-iaas-theem bash' >> ps.txt
+
+user=`cat ps.txt | grep 'ssh ubuntu@hunt-ukbb-iaas-theem bash' | head -n1 | cut -d ' ' -f1`
 
 echo 'Currently '${user}' is running a GWAS'
 
 echo 'Details can be found below'
+
+echo 'Please check %CPU and %MEM are 0'
 
 # print time log
 cat time.log
@@ -31,4 +36,19 @@ ssh ubuntu@hunt-ukbb-iaas-theem 'ps aux' > ${tmpfile}
 rm ${tmpfile}
 rmdir ${tmp_dir}
 
+# 
+echo 'If %CPU and %MEM are not 0 please check who is doing what on Slack'
 
+# print ETAs
+
+echo 'ETAs for 24 cpu:
+binary step1: 20.6 [8.5-32.3] hours
+binary step2: 45.9 [13.4-66.4] hours
+qt step1: 133.6 [120.4-143.5] hours
+qt step2: 24 [23.4-24.7] hours'
+
+echo ' avg [min-max] cpu hours
+binary step1: 495 [204-776] cpu hours
+binary step2: 1102 [320-1594] cpu hours
+qt step1: 3207 [2889-3444] cpu hours
+qt step2: 1102 [320-1594] cpu hours'
