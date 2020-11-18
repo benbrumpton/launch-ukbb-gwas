@@ -3,7 +3,7 @@ Run GWAS in UKBB on a remote node
 
 ## Defaults
 ### Rank normalize quantitative outcome
-QuantOutcomeRankNorm=TRUE
+QuantOutcomeRankNorm=FALSE
 
 ### Extract unrelated individuals
 doExtractUnrel=FALSE
