@@ -34,6 +34,9 @@ phenokey=infection-heart_ukb_v1_phenotypeConstructLT_2020-10-28_key.txt
 This is the folder that contains the above files     
 folder=/mnt/archive/phenotypes/constructs/phenoCons/example/    
 
+HINT: To edit in vim type `i`     
+To save and exit type `:wq`
+
 ### Step 2 - check if the machine is free          
 `bash cpumem.sh`          
 
