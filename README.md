@@ -35,7 +35,7 @@ This is the folder that contains the above files
 folder=/mnt/archive/phenotypes/constructs/phenoCons/example/    
 
 HINT: To edit in vim type `i`     
-To save and exit type `:wq`
+To save and exit press Esc and then type `:wq`
 
 ### Step 2 - check if the machine is free          
 `bash cpumem.sh`          
