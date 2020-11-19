@@ -49,7 +49,7 @@ If you have >10 jobs, please let Ben or Laurent know and it might be possible to
 `screen -S job_name`     
 `bash launch_your_job.sh`   
 
-HINT: To edit detach from screen press `ctr + a then d`     
+HINT: To detach from screen press `ctr + a then d`     
 To reattach type `screen -r`
 
 ### Step 4 - move your results     
