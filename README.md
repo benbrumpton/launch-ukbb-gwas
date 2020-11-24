@@ -17,13 +17,13 @@ minmaf=0
 ### Minimum imputation score to filter variants when running SAIGE step2 from bgen files
 mininfo=0.3
 
-## Before you run a job for the first time    
-Please can you write    
+## Before you launch for the first time    
+Please type    
 `ssh ubuntu@hunt-ukbb-iaas-theem`     
 password is ubuntu    
 then    
 `exit`     
-then write      
+then type      
 `ssh-copy-id ubuntu@hunt-ukbb-iaas-theem`     
 password is ubuntu     
 
