@@ -19,13 +19,13 @@ mininfo=0.3
 
 ## Before you run a job for the first time    
 Please can you write    
-`ssh ubuntu@hunt-ukbb-iaas-theem`    
-password is ubuntu
-then
-`exit`
-then write 
-`ssh-copy-id ubuntu@hunt-ukbb-iaas-theem`
-password is ubuntu
+`ssh ubuntu@hunt-ukbb-iaas-theem`     
+password is ubuntu    
+then    
+`exit`     
+then write      
+`ssh-copy-id ubuntu@hunt-ukbb-iaas-theem`     
+password is ubuntu     
 
 ## How to
 ### Step 1 - create your job
