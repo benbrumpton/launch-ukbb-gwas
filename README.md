@@ -48,7 +48,7 @@ HINT: To edit in vim type `i`
 To save and exit press Esc and then type `:wq`
 
 WARNING: If you repeat jobs with the same phenotype name it will overwrite existing files.     
-Please use unquie phenotype names, for example, pheno1, pheno2 pheno3 NOT pheno, pheno, pheno.   
+Please use unique phenotype names, for example, pheno1, pheno2 pheno3 NOT pheno, pheno, pheno.   
 
 ### Step 2 - check if the machine is free          
 `bash cpumem.sh`          
