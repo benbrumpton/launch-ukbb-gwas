@@ -1,13 +1,9 @@
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root      1238  0.0  0.0  14652  1608 tty1     Ss+  Sep28   0:00 /sbin/agetty --noclear tty1 linux
-root      1240  0.0  0.0  14468  1948 ttyS0    Ss+  Sep28   0:00 /sbin/agetty --keep-baud 115200 38400 9600 ttyS0 vt220
-laurenth  8211  0.0  0.1  21412  5336 pts/1    Ss+  Nov04   0:00 /bin/bash
-benb     12098  0.0  0.1  21476  5332 pts/6    Ss   Nov10   0:00 /bin/bash
-laurenth 13336  0.0  0.1  21420  5264 pts/2    Ss+  Nov04   0:00 /bin/bash
-laurenth 17185  0.0  0.1  21412  5264 pts/3    Ss+  Nov04   0:00 /bin/bash
-laurenth 22618  0.0  0.1  21632  5588 pts/0    Ss+  11:31   0:00 -bash
-benb     23484  0.0  0.1  21292  5096 pts/4    Ss   14:00   0:00 -bash
-benb     23499  0.0  0.0  25768  2884 pts/4    S+   14:00   0:00 screen -r
-benb     24302  0.0  0.0  11252  2944 pts/6    S+   14:21   0:00 bash cpumem.sh
-benb     24303  0.0  0.0  36052  3284 pts/6    R+   14:21   0:00 ps ua
+root      1238  0.0  0.0  14652  1572 tty1     Ss+  Sep28   0:00 /sbin/agetty --noclear tty1 linux
+root      1240  0.0  0.0  14468  1820 ttyS0    Ss+  Sep28   0:00 /sbin/agetty --keep-baud 115200 38400 9600 ttyS0 vt220
+ailinfh  21217  0.0  0.1  21296  4996 pts/0    Ss+  09:47   0:00 -bash
+ailinfh  21277  0.0  0.1  21312  5292 pts/1    Ss+  09:49   0:00 -bash
+benb     21555  0.0  0.1  21388  5332 pts/2    Ss   10:13   0:00 -bash
+benb     21732  0.0  0.0  11244  2920 pts/2    S+   10:25   0:00 bash cpumem.sh
+benb     21733  0.0  0.0  36052  3256 pts/2    R+   10:25   0:00 ps ua
 NO_ONE ssh ubuntu@hunt-ukbb-iaas-theem bash

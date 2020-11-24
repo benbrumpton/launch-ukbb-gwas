@@ -52,3 +52,8 @@ binary step1: 495 [204-776] cpu hours
 binary step2: 1102 [320-1594] cpu hours
 qt step1: 3207 [2889-3444] cpu hours
 qt step2: 1102 [320-1594] cpu hours'
+
+echo 'Updated runtimes
+TYPE    N/1K    STEP1_THREADS   STEP1_TIME      CHUNKS  STEP2_AVGTIME   STEP2_MAXTIME
+binary  318.4[8.9-407.9]        24      20.6[8.4-32.3]  24      46.0[13.4-66.4] 49.2[16.6-69.8]
+quantitative    377.6[356.0-388.6]      24      133.6[120.4-143.5]      24      23.9[23.4-24.7] 24.6[24.2-25.2]'
