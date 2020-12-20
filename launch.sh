@@ -5,11 +5,16 @@ user=benb
 phenofile=infection-heart_ukb_v1_phenotypeConstructLT_2020-10-28.txt
 phenokey=infection-heart_ukb_v1_phenotypeConstructLT_2020-10-28_key.txt
 folder=/mnt/archive/phenotypes/constructs/phenoCons/example/
+tool=bolt
+#tool=saige
 
 #### Do not change anything below ####
 
 # time stamp
 echo "Start time: $(date)" > time.log
+
+# Maintenance
+v=current
 
 #Waring 1
 WARNING1=yes
@@ -61,7 +66,7 @@ rsync -avP ${folder}/${phenokey} ubuntu@hunt-ukbb-iaas-theem:/home/ubuntu/mnt-uk
 rsync -avP ${folder}/${phenofile} ubuntu@hunt-ukbb-iaas-theem:/home/ubuntu/mnt-ukbb/pheno/
 
 # Send job
-ssh ubuntu@hunt-ukbb-iaas-theem 'bash /home/ubuntu/mnt-ukbb/scripts/run.sh '${phenofile}' '${phenokey}''
+ssh ubuntu@hunt-ukbb-iaas-theem 'bash /home/ubuntu/mnt-ukbb/scripts/run.sh '${phenofile}' '${phenokey}' '${tool}' '${v}''
 
 wait
 
