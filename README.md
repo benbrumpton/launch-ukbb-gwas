@@ -42,8 +42,8 @@ phenofile=infection-heart_ukb_v1_phenotypeConstructLT_2020-10-28.txt
 This is the name of the file with information about the GWAS you are about to run     
 phenokey=infection-heart_ukb_v1_phenotypeConstructLT_2020-10-28_key.txt     
 This is the folder that contains the above files     
-folder=/mnt/archive/phenotypes/constructs/phenoCons/example/
-This is your choice of analysis software (options are "saige" or "bolt")
+folder=/mnt/archive/phenotypes/constructs/phenoCons/example/        
+This is your choice of analysis software (options are "saige" or "bolt")       
 tool=saige
 
 HINT: To edit in vim type `i`     
@@ -57,7 +57,8 @@ Please use unique phenotype names, for example, pheno1, pheno2 pheno3 NOT pheno,
 
 If %CPU and %MEM are not 0 please check who is doing what on Slack.      
 There is no queing system for jobs and you need to communicate with others.     
-If you have >10 jobs, please let Ben or Laurent know and it might be possible to set up another machine.        
+If you have >10 jobs, please let Ben or Laurent know and it might be possible to set up another machine.     
+             
 Have you accidently started a job and exited the script? The job might be still running in the background. i.e. NO_ONE is running a gwas BUT %CPU and %MEM are not 0. Then run `bash kill.sh` and try again. 
 
 ### Step 3 - send your job
