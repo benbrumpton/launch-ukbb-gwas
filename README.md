@@ -14,8 +14,8 @@ minmac=3
 ### Minimum allele frequency to filter final results and plot
 minmaf=0
 
-### Minimum imputation score to filter variants when running SAIGE step2 from bgen files
-mininfo=0.3
+### Minimum imputation score to filter variants when running the association test in bgen files
+mininfo=0.4
 
 ## Before you launch for the first time    
 Please type    
