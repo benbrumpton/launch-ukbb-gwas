@@ -27,6 +27,13 @@ then type
 `ssh-copy-id ubuntu@hunt-ukbb-iaas-theem`     
 password is ubuntu     
 
+#STOP!!!
+Do you really need to do this?     
+GWAS use large computational resources and many precomputed summary statistics are available for UK Biobank      
+Please check if summary statistics are already available to download for your purpose here:    
+https://pan.ukbb.broadinstitute.org/
+http://www.nealelab.is/uk-biobank
+
 ## How to
 ### Step 1 - create your job
 `cd ~/scratch/repo/launch-ukbb-gwas`     
